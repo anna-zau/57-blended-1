@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-
 import { Header } from 'components';
 import { CountrySearch, Home, Country } from 'pages';
 
