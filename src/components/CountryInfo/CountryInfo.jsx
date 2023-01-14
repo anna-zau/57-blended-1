@@ -9,7 +9,9 @@ import {
   Accent,
 } from './CountryInfo.styled';
 
-export const CountryInfo = ({countryInfo: {flag, capital, countryName, id, languages = [], population}}) => {
+export const CountryInfo = ({
+  countryInfo: { flag, capital, countryName, id, languages = [], population },
+}) => {
   return (
     <CountryWrapper key={id}>
       <Flag>
@@ -23,7 +25,6 @@ export const CountryInfo = ({countryInfo: {flag, capital, countryName, id, langu
         <CountryTitle>
           {countryName === 'Russian Federation' ? 'MORDOR' : countryName}
         </CountryTitle>
-
 
         <CountryDetail>
           Population: <Accent>{population}</Accent>
