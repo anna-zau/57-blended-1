@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom'
 import {useEffect} from 'react';
 
 export const Country = () => {
-  const {countryId} = useParams()
+  const { countryId } = useParams()
+  console.log(countryId);
 
   useEffect(() => {
     
